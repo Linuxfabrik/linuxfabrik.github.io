@@ -1,0 +1,60 @@
+site_name: 'Linuxfabrik Open Source'
+site_url: 'https://linuxfabrik.github.io/'
+site_description: 'Open source projects by Linuxfabrik: monitoring plugins, Ansible automation, firewall management, checklists and more.'
+repo_url: 'https://github.com/Linuxfabrik/linuxfabrik.github.io'
+repo_name: 'Linuxfabrik/linuxfabrik.github.io'
+
+theme:
+  name: 'material'
+  icon:
+    logo: 'material/penguin'
+  palette:
+    - scheme: 'default'
+      primary: 'blue grey'
+      accent: 'orange'
+      toggle:
+        icon: 'material/brightness-7'
+        name: 'Switch to dark mode'
+    - scheme: 'slate'
+      primary: 'blue grey'
+      accent: 'orange'
+      toggle:
+        icon: 'material/brightness-4'
+        name: 'Switch to light mode'
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+validation:
+  links:
+    not_found: 'info'
+    unrecognized_links: 'info'
+  anchors: 'info'
+
+not_in_nav: |
+  CODE_OF_CONDUCT.md
+
+nav:
+  - 'Home': 'index.md'
+  - 'Changelog': 'CHANGELOG.md'
+  - 'Contributing': 'contributing.md'
+  - 'Security': 'security.md'

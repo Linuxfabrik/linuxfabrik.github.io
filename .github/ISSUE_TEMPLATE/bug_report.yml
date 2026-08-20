@@ -1,0 +1,47 @@
+name: 'Bug report'
+description: 'Report a problem with the landing page at linuxfabrik.github.io'
+labels:
+  - 'bug'
+body:
+  - type: 'markdown'
+    attributes:
+      value: |
+        This tracker covers the landing page only. Problems with a specific project belong in that project's own repository.
+
+  - type: 'checkboxes'
+    id: 'before-posting'
+    attributes:
+      label: 'Before submitting:'
+      options:
+        - label: 'This is about the landing page itself, not about one of the linked projects.'
+          required: true
+        - label: 'I have searched existing issues to make sure this is not a duplicate.'
+          required: true
+        - label: 'I agree to follow the [Code of Conduct](https://github.com/Linuxfabrik/linuxfabrik.github.io/blob/main/CODE_OF_CONDUCT.md).'
+          required: true
+
+  - type: 'textarea'
+    id: 'bug-description'
+    attributes:
+      label: 'Bug description'
+      description: 'Broken link, wrong or outdated project description, rendering problem, ...'
+    validations:
+      required: true
+
+  - type: 'input'
+    id: 'url'
+    attributes:
+      label: 'Affected URL'
+      description: 'The page or link the problem occurs on.'
+
+  - type: 'textarea'
+    id: 'environment'
+    attributes:
+      label: 'Environment'
+      description: 'Browser and version, if the problem is a rendering one.'
+
+  - type: 'textarea'
+    id: 'additional'
+    attributes:
+      label: 'Additional context'
+      description: 'Any other information or screenshots.'

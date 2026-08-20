@@ -1,0 +1,19 @@
+repos:
+  - repo: 'https://github.com/gitleaks/gitleaks'
+    rev: 'v8.30.0'
+    hooks:
+      - id: 'gitleaks'
+
+  - repo: 'https://github.com/pre-commit/pre-commit-hooks'
+    rev: 'v6.0.0'
+    hooks:
+      - id: 'check-added-large-files'
+      - id: 'check-merge-conflict'
+      - id: 'check-yaml'
+        # --unsafe keeps syntax checking but skips tag resolution, so the
+        # `!!python/name:` tags mkdocs-material needs in mkdocs.yml do not
+        # trip the hook.
+        args: ['--unsafe']
+      - id: 'end-of-file-fixer'
+      - id: 'trailing-whitespace'
+        args: ['--markdown-linebreak-ext=md']
