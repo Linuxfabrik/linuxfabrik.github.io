@@ -121,4 +121,4 @@ These repositories have no documentation site of their own. Their READMEs cover 
 
 Bug reports and feature requests belong in the issue tracker of the respective repository. Contribution rules are the same everywhere and are documented in [Contributing](contributing.md).
 
-If a project saves you time, consider [sponsoring](https://github.com/sponsors/Linuxfabrik) its maintenance. Commercial [support and SLAs](https://www.linuxfabrik.ch/en/products/service-support) are available.
+If a project saves you time, consider [sponsoring](https://github.com/sponsors/Linuxfabrik) its maintenance. Commercial [support and SLAs](https://www.linuxfabrik.ch/de/leistungen/service-support) are available.
