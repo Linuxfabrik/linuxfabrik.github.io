@@ -11,3 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 * The GitHub Pages root <https://linuxfabrik.github.io/> serves a landing page instead of returning 404, listing every public Linuxfabrik project with a link to its documentation.
+
+
+### Fixed
+
+* The link to commercial support and SLAs opens the support page again instead of a 404
